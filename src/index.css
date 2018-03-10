@@ -1,0 +1,37 @@
+body {
+    padding: 5%;
+    text-align: center;
+}
+
+.link-home {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+.card {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    background: lightgreen;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-hidden {
+    visibility: hidden;
+}
+
+.text-revealed {
+    animation-name: fade-in;
+    animation-duration: 1s;
+    visibility: visible;
+}
+
+@keyframes fade-in {
+    from { opacity: 0 }
+    to { opacity: 100 }
+}
