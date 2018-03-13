@@ -6,7 +6,7 @@ class Card extends Component {
         this.state = { reveal: false }
     }
 
-    reveal = () => {
+    reveal(){
         return this.state.reveal ? 'text-revealed' : 'text-hidden'
     }
 
