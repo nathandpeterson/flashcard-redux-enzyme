@@ -6,12 +6,7 @@ export const stack = {
             {id: 1, prompt: 'test prompt 2', answer: ''}]
 }
 
-const stack2 = {id: 1,
-                title: 'My Other Stack',
-                cards: [
-                    {id: 2, prompt: 'test prompt 3', answer: 'test answer'},
-                    {id: 3, prompt: 'test prompt 4', answer: 'test answer'},
-                ]}
+export const card = {id: 1, prompt: 'test prompt 2', answer: 'answer 2'}
 
 export const stacks = [
     stack
