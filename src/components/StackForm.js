@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { Form, FormControl, FormGroup, ControlLabel, Button } from 'react-bootstrap'
 import { addStack } from '../actions'
 
-class StackForm extends Component {
+export class StackForm extends Component {
     constructor(){
         super()
 
@@ -14,7 +14,7 @@ class StackForm extends Component {
         }
     }
 
-    addCard = () => {        
+    addCard(){        
         const { cards } = this.state
         const card = {id: cards.length,
                         prompt: '',
@@ -23,13 +23,13 @@ class StackForm extends Component {
         this.setState({cards: updatedCards})
     }
 
-    updateCard = (e, i, part) => {        
+    updateCard (e, i, part) {        
         const { cards } = this.state
         cards[i][part] = e.target.value
         this.setState({cards})
     }
 
-    addStack = () => {
+    addStack () {
         this.props.addStack(this.state)
     }
 
@@ -39,7 +39,7 @@ class StackForm extends Component {
                 <Link className='link-home' to='/'>
                     <h4>Home</h4>
                 </Link>
-                <h4>Create a New Stack </h4>
+                <h4>Create a New Stack</h4>
                 <br />
                 <Form inline>
                     <FormGroup>
